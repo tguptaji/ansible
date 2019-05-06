@@ -28,7 +28,7 @@
 # same ServerRoot for multiple httpd daemons, you will need to change at
 # least PidFile.
 #
-ServerRoot "/etc/httpd"
+ServerRoot "/etc/apache2"
 
 #
 # Listen: Allows you to bind Apache to specific IP addresses and/or
@@ -53,7 +53,7 @@ Listen {{ http_port }}
 # Example:
 # LoadModule foo_module modules/mod_foo.so
 #
-Include conf.modules.d/*.conf
+#Include conf.modules.d/*.conf
 
 #
 # If you wish httpd to run as a different user or group, you must run
