@@ -1,0 +1,10 @@
+---
+ - name: install nginx & git & maven
+   hosts: node1
+   tasks:
+    - name: "Install nginx"
+      apt: name=nginx state=present
+    - name: "Install git"
+      apt: name=git state=present
+    - name: "Install maven"
+      apt: name=maven state=present

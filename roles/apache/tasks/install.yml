@@ -1,0 +1,7 @@
+---
+# Install code for apache
+
+ - name: To install Apache
+   apt:
+     name: "{{ package }}"
+     state: installed

@@ -1,0 +1,6 @@
+---
+# vars file for apache
+
+package: apache2 
+myuser: apacheadm
+mygroup: apache

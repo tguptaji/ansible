@@ -1,0 +1,23 @@
+---
+# This is my first playbook
+
+# HEADER SECTION
+ - name: This playbook will create a file
+   hosts: node1
+   vars:
+     mysoftware: unzip
+
+# TASK SECTION
+   tasks:
+     - name: To install package named "{{ mysoftware }}"
+       apt:
+         name: "{{ mysoftware }}"
+         state: absent 
+       vars:
+         mysoftware: maven
+
+     - name: To install software named "{{ mysoftware }}"
+       apt:
+         name: "{{ mysoftware }}"
+         state: absent 
+

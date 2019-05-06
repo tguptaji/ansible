@@ -1,0 +1,15 @@
+---
+# This is my first playbook
+
+# HEADER SECTION
+ - name: This playbook will create a file
+   hosts: node1
+
+# TASK SECTION
+   tasks:
+     - name: To install package named "{{ mypackage }}"
+       apt:
+         name: "{{ mypackage }}"
+         state: present 
+       vars:
+         mypackage: unzip
